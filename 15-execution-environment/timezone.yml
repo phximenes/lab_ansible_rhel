@@ -1,0 +1,10 @@
+---
+- name: Configurar timezone usando uma Collection externa
+  hosts: managed
+  become: true
+  gather_facts: false
+
+  tasks:
+    - name: Configurar timezone
+      community.general.timezone:
+        name: America/Sao_Paulo

@@ -1,0 +1,4 @@
+---
+- hosts: all
+  tasks:
+    - shell: dnf install httpd -y

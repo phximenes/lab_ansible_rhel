@@ -1,0 +1,9 @@
+[webservers]
+server01 ansible_host=192.168.56.11
+
+[dbservers]
+server02 ansible_host=192.168.56.12
+
+[production:children]
+webservers
+dbservers

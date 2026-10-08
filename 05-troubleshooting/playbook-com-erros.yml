@@ -1,0 +1,14 @@
+---
+- name: Playbook propositalmente problemático
+  hosts: webservers
+  become: true
+
+  tasks:
+    - name: Instalar pacote inexistente
+      ansible.builtin.dnf:
+        name: pacote-que-nao-existe-200dev
+        state: present
+
+    - name: Esta tarefa não deve ser executada após a falha
+      ansible.builtin.debug:
+        msg: "Se você chegou aqui, revise o cenário."

@@ -1,0 +1,13 @@
+VERSÃO DO ALUNO
+
+Este pacote não contém os arquivos que constituem as respostas dos exercícios.
+
+Exemplos:
+- Lab 01: aluno cria ansible.cfg.
+- Lab 02: aluno cria inventários.
+- Lab 04: aluno cria webserver.yml.
+- Lab 05: somente o arquivo propositalmente errado é fornecido.
+- Lab 13: somente playbook-ruim.yml é fornecido.
+- Lab 14: somente o enunciado é fornecido.
+
+Mantenha o pacote completo original separado como gabarito do instrutor.

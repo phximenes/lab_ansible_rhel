@@ -10,7 +10,7 @@ Execute:
 
 ```bash
 sudo dnf install -y git podman
-sudo dnf install -y ansible-dev-tools
+sudo dnf --enablerepo=ansible-automation-platform-2.7-for-rhel-10-x86_64-rpms install ansible-dev-tools
 ```
 
 Valide:

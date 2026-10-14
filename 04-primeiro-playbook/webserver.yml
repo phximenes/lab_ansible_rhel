@@ -12,7 +12,7 @@
     - name: Iniciar e habilitar o Apache
       ansible.builtin.service:
         name: httpd
-        state: present
+        state: started
         enabled: true
 
     - name: Criar pagina inicial

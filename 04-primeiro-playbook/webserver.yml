@@ -1,0 +1,26 @@
+---
+- name: Configurar servidor web
+  hosts: webservers
+  become: true
+
+  tasks:
+    - name: Instalar Apache
+      ansible.builtin.dnf:
+        name: httpd
+        state: present
+
+    - name: Iniciar e habilitar o Apache
+      ansible.builtin.service:
+        name: httpd
+        state: present
+        enabled: true
+
+    - name: Criar pagina inicial
+      ansible.builtin.copy:
+        content: |
+          Servidor configurado pelo Ansible
+          Host: {{ inventory_hostname }}
+        dest: /var/www/html/index.html
+        owner: root
+        group: root
+        mode: 0644
